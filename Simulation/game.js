@@ -73,9 +73,6 @@ function javascript_abort(){
    throw new Error('This is not an error. This is just to end the game by using force.');
 }
 
-userFunction();
-enemyFunction();
-
 function execute(){
   //Game process
   var oper = prompt("Enter command. 1.Atk  2.Def  3.Run  4.Stats");
@@ -116,3 +113,7 @@ function execute(){
     execute();
   }
 }
+
+userFunction();
+enemyFunction();
+execute();
